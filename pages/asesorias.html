@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1edbf2c491.js" crossorigin="anonymous"></script>
+    <title>Kaffetto´s</title>
+</head>
+<body>
+    <div>  
+        <header class="encabezado">
+            <nav class="navegador flex-row container-row">
+                <a href="./index.html"><img src="../imagenes/k2.png" alt="logo de taza" width="200px"></a>
+            <ul class="menuDeNavegacion flex-row">
+                <li class="menuDeNavegacion__item"><a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li class="menuDeNavegacion__item"><a href="../pages/menu-digital.html"><i class="fa-solid fa-bars"></i>Menu Digital</a></li>
+                <li class="menuDeNavegacion__item"><a href="../pages/asesorias.html"><i class="fa-solid fa-graduation-cap"></i>Asesorias</a></li>
+                <li class="menuDeNavegacion__item"><a href="../pages/contacto.html"><i class="fa-solid fa-phone"></i>Contacto</a></li>
+                <li class="menuDeNavegacion__item"><a href="../pages/nosotros.html"><i class="fa-solid fa-user-group"></i>Nosotros</a></li>
+            </ul>
+            </nav>
+        </header>
+        <section class="seccionPrincipal container-row">
+            <h1 class="seccionPrincipal__titulo">ASESORIAS</h1>
+            <p class="seccionPrincipal__texto">Hola!, Si tenes dudas sobre como montar tu cafetería de especialidad, ¡nosotros te ayudamos!. Completá el formulario de abajo y en la brevedad nos contactaremos contigo.</p>
+        <div class="asesoriaContainer flex-row">
+            <!-- <img src="../imagenes/cafeteria-img-asesoria.jpg" alt="imagen de ejemplo" height="400px">  -->
+        <form class="formAsesorias container-row" action="" method="post">
+            <input type="text" class="formAsesorias__input" name="nombreyapellido" id="nombreyapellido" placeholder="Nombre y Apellido">
+            <input type="email" class="formAsesorias__input" name="email" id="email" placeholder="Email">
+            <input type="text" class="formAsesorias__input"name="ciudad" id="ciudad" placeholder="Ciudad">
+            <input type="text" class="formAsesorias__input" name="país" id="país" placeholder="Pais">
+            <input type="text" class="formAsesorias__input" name="proyecto" id="proyecto" placeholder="Proyecto">
+            <input type="number" class="formAsesorias__input" name="telefono" id="telefono" placeholder="Teléfono Celular">
+            <label for="presupuesto" class="formAsesorias__label">Presupuesto</label>
+            <select name="presupuesto" class="formAsesorias__select" id="presupuesto">
+                <option value="10milusd">+10 Mil USD</option>
+                <option value="30milusd">+30 Mil USD</option>
+                <option value="50milusd">+50 Mil USD</option>
+                <option value="100milusd">+100 Mil USD</option>
+                <option value="200milusd">+200 Mil USD</option>
+            </select>
+            <button type="submit" class="formAsesorias__button">Enviar</button>
+        </form>
+        </div>
+        </section>
+        <footer class="pieDePagina" >
+            <div class="pieDePaginaContainer flex-row container-row">
+                <a class="pieDePagina__enlaceDeInicio" href="../index.html">Volver a pagina de Inicio</a>
+                <p class="pieDePagina__texto">Este es el texto que va a tener el footer</p>
+            <ul class="pieDePagina__contenido flex-row">
+                <li><a class="pieDePagina__redes" href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a class="pieDePagina__redes" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a class="pieDePagina__redes" href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

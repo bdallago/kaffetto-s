@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1edbf2c491.js" crossorigin="anonymous"></script>
+    <title>Kaffetto´s</title>
+</head>
+<body>
+    <div>  
+        <header class="encabezado">
+            <nav class="navegador flex-row container-row">
+                <a href="../index.html"><img src="../imagenes/k2.png" alt="logo de taza" width="200px"></a>
+            <ul class="menuDeNavegacion flex-row">
+                <li class="menuDeNavegacion__item"><a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li class="menuDeNavegacion__item"><a href="../pages/menu-digital.html"><i class="fa-solid fa-bars"></i>Menu Digital</a></li>
+                <li class="menuDeNavegacion__item"><a href="../pages/asesorias.html"><i class="fa-solid fa-graduation-cap"></i>Asesorias</a></li>
+                <li class="menuDeNavegacion__item"><a href="../pages/contacto.html"><i class="fa-solid fa-phone"></i>Contacto</a></li>
+                <li class="menuDeNavegacion__item"><a href="../pages/nosotros.html"><i class="fa-solid fa-user-group"></i>Nosotros</a></li>
+            </ul>
+            </nav>
+        </header>
+        <section class="seccionPrincipal container-row">
+                <h1 class="seccionPrincipal__titulo">CONTACTO</h1>
+                <p class="seccionPrincipal__texto">Hola! Tu opinion nos interesa. Por cualquier duda, consulta, sugerencia o propuesta, podes contactar con nosotros a traves de la siguiente dirección de correo: <a href="">kaffettoscoffe@gmail.com</a></p>
+            <div class="formContactoContainer flex-row">
+                <img src="../imagenes/imagen contacto.jpg" alt="hombre en la barra del cafe con un telefono" class="fromContactoContainer__img">
+                <form action="" class="formContacto container-row" method="post">
+                    <label for="comments" class="formContacto__label flex-column">O si lo preferis, podes depositar tu comentario aqui y te contactaremos a la brevedad.</label>
+                    <input type="text" class="formContacto__input" name="nombreyapellido" id="nombreyapellido" placeholder="Nombre y Apellido">
+                    <input type="email" class="formContacto__input" name="email" id="email" placeholder="Email">
+                    <input type="number" class="formContacto__input" name="telefono" id="telefono" placeholder="Teléfono Celular">
+                    <textarea name="comments" class="flex-end container-column form__textArea" id="comments" cols="30" rows="10"></textarea>
+                    <button type="submit" class="formContacto__button"">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <footer class="pieDePagina" >
+            <div class="pieDePaginaContainer flex-row container-row">
+                <a class="pieDePagina__enlaceDeInicio" href="../index.html">Volver a pagina de Inicio</a>
+                <p class="pieDePagina__texto">Este es el texto que va a tener el footer</p>
+            <ul class="pieDePagina__contenido flex-row">
+                <li><a class="pieDePagina__redes" href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a class="pieDePagina__redes" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a class="pieDePagina__redes" href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
