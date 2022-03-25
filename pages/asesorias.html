@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,8 +30,13 @@
             <h1 class="seccionPrincipal__titulo">ASESORIAS</h1>
             <p class="seccionPrincipal__texto">Hola!, Si tenes dudas sobre como montar tu cafetería de especialidad, ¡nosotros te ayudamos!. Completá el formulario de abajo y en la brevedad nos contactaremos contigo.</p>
         <div class="asesoriaContainer flex-row">
-            <!-- <img src="../imagenes/cafeteria-img-asesoria.jpg" alt="imagen de ejemplo" height="400px">  -->
-        <form class="formAsesorias container-row" action="" method="post">
+            <div class="card cardContainer" style="width: 22rem; height: 27rem;">
+                <img src="../imagenes/diploma.jpg" class="card-img-top " width="220rem" alt="...">
+                <div class="card-body">
+                  <p class="card-text card__texto">Estamos certificados por la SCA (Speciality Coffe Association)</p>
+                </div>
+            </div>
+        <form class="formAsesorias container-row text" action="" method="post">
             <input type="text" class="formAsesorias__input" name="nombreyapellido" id="nombreyapellido" placeholder="Nombre y Apellido">
             <input type="email" class="formAsesorias__input" name="email" id="email" placeholder="Email">
             <input type="text" class="formAsesorias__input"name="ciudad" id="ciudad" placeholder="Ciudad">
@@ -47,6 +53,7 @@
             </select>
             <button type="submit" class="formAsesorias__button">Enviar</button>
         </form>
+          </div>
         </div>
         </section>
         <footer class="pieDePagina" >
@@ -60,6 +67,7 @@
             </ul>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </div>
 </body>
 </html>

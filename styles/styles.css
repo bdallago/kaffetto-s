@@ -55,7 +55,7 @@ body{
     "section section section"
     "footer footer footer"
     ;
-    grid-template-rows: 108px 450px 450px 36px ;
+    grid-template-rows: 108px 550px 550px 36px ;
     grid-template-columns: 25%;
     height: 100vh;
     margin: 0;
@@ -170,13 +170,23 @@ footer{
     flex: 1 1 40%;
 }
 .asesoriaContainer{
-    justify-content: flex-end;
+    justify-content: space-around;
     margin-top: 10em;
     background: url(../imagenes/cafeteria-img-asesoria-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
     min-height: 72em;
+}
+.cardContainer{
+    display: inline-block;
+    background: var(--principal);
+    align-items: center;
+    margin-top: 20em;
+    border-radius: 3rem;
+}
+.card__texto{
+    font-size: 1.5em;
 }
 .formAsesorias{
     background:rgb(108, 63, 15);
@@ -230,10 +240,11 @@ footer{
     align-items: flex-end;
     justify-content: flex-end;
     margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 .fromContactoContainer__img{
     width: 75rem;
-    margin: 0 10rem 10rem 0;
+    margin: 0 10rem 10rem -15rem;
 }
 .formContacto{
     background:rgb(108, 63, 15);
@@ -241,8 +252,8 @@ footer{
     justify-content: center;
     align-items: center;
     width: 30em;
-    height: 50em;
-    padding: 5em 0 0 4em;
+    height: 64em;
+    padding: 4em 0 0 4em;
     border-radius: 2em;
     margin: 3em -3em 5em 3em;
 }
@@ -280,6 +291,10 @@ footer{
     text-transform: uppercase;
     background: #f6f6f6;
 }
+.carouselContainer{
+    display: flex;
+    justify-content: center;
+}
 .imagenesNosotrosContainer{
     justify-content: center;
     align-items: justify;
@@ -294,7 +309,7 @@ footer{
     width: 50rem;
 }
 .pieDePagina{
-    background: var(--principal);
+    background: var(--principal)
 }
 .pieDePaginaContainer{
     justify-content: space-around;
