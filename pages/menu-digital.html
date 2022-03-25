@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,58 +28,93 @@
         </header>
         <section class="section seccionPrincipal container-row">  
             <h1 class="seccionPrincipal__titulo">MENÚ DIGITAL</h1>
-        <section class="seccionMenuDigital flex-column container-row">
-            <div class="menuContainer flex-row">
-            <article class="menu flex-row"> 
-            <ul class="menu__contenido">
-                <h3 class="menu__titulo">Espresso</h3>
-                    <li> Espresso
-                    <li>Dopio
-                    <li>Doble Espresso
-                    <li>Americano
-                    <li>Machiatto
-                    <li>Latte
-                    <li>Flatt White
-                    <li>Flatt Power
-                    <li>Mocha
-                    <li>Vainilla Latte
-                    <li>Caramel Latte
-            </ul>
-            </article>
-            <article class="menu">
-            <ul class="menu__contenido">
-                <h3 class="menu__titulo">Filtrados</h3>
-                    <li>Chemex
-                    <li>Aeropress
-                    <li>Prensa Francesa
-                    <li>v60
-            </ul>
-            </article>
-            <article class="menu">
-            <ul class="menu__contenido">
-                <h3 class="menu__titulo">Línea Fria</h3>
-                    <li>Cold Brew
-                    <li>V60 On Ice 
-                    <li>Espresso Tonic
-                    <li>Cold Brew Tonic
-                    <li>Iced Latte
-            </ul>
-            </article>
-            <article class="menu">
-            <ul class="menu__contenido">
-                    <h3 class="menu__titulo">Para Comer</h3>
-                    <li>Ciabatta de Jamon Crudo
-                    <li>Ciabatta de Jamon Cocido y Queso
-                    <li>Croissant Capresse
-                    <li>Croissant De Jamon Crudo
-                    <li>Avocado Toast
-                    <li>Bruschetta de Palta
-                    <li>Waffles de Frutas
-                    <li>Tostadas de Masa Madre 
-            </ul>
-            </article>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item bg-danger">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-danger text-white text-uppercase fw-bold fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Espresso
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="menu__contenido text-dark bg-danger">
+                            <h3 class="menu__titulo text-dark bg-danger">Espresso</h3>
+                                <li> Espresso
+                                <li>Dopio
+                                <li>Doble Espresso
+                                <li>Americano
+                                <li>Machiatto
+                                <li>Latte
+                                <li>Flatt White
+                                <li>Flatt Power
+                                <li>Mocha
+                                <li>Vainilla Latte
+                                <li>Caramel Latte
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-warning">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-warning text-dark text-uppercase fw-bold fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Filtrados
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="menu__contenido text-dark bg-warning">
+                            <h3 class="menu__titulo text-dark bg-warning">Filtrados</h3>
+                                <li>Chemex
+                                <li>Aeropress
+                                <li>Prensa Francesa
+                                <li>v60
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-danger">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-danger text-white text-uppercase fw-bold fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Línea Fria
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="menu__contenido text-dark bg-danger">
+                            <h3 class="menu__titulo text-dark bg-danger">Línea Fria</h3>
+                                <li>Cold Brew
+                                <li>V60 On Ice 
+                                <li>Espresso Tonic
+                                <li>Cold Brew Tonic
+                                <li>Iced Latte
+                        </ul>
+                        </article>
+                    </div>
+                  </div>
+                </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed bg-warning text-dark text-uppercase fw-bold fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Para Comer
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-warning">
+                    <ul class="menu__contenido text-dark bg-warning">
+                        <h3 class="menu__titulo text-dark">Para Comer</h3>
+                        <li>Ciabatta de Jamon Crudo
+                        <li>Ciabatta de Jamon Cocido y Queso
+                        <li>Croissant Capresse
+                        <li>Croissant De Jamon Crudo
+                        <li>Avocado Toast
+                        <li>Bruschetta de Palta
+                        <li>Waffles de Frutas
+                        <li>Tostadas de Masa Madre 
+                </ul>
+                </div>
+              </div>
             </div>
-        </section>
+            </div>
         </section>
         <footer class="footer pieDePagina" >
             <div class="pieDePaginaContainer flex-row container-row">
@@ -91,6 +127,7 @@
             </ul>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </div>
 </body>
 </html>

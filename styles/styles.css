@@ -4,6 +4,7 @@
     --font-color-tittle: white;
     --font-color-body: black;
     --font-primary: 'Fredoka', sans-serif;
+    --bs-body-line-height: 1;
 }
 
 /* RESET */
@@ -23,7 +24,9 @@ html{
 body{
     font-family: 'Fredoka', sans-serif;
     background: var(--secondary) ;
+    line-height: normal;
 }
+
 /* HELPERS */
 .flex-row{
     display: flex;
