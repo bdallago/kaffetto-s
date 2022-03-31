@@ -23,6 +23,10 @@ html{
 body{
     font-family: 'Fredoka', sans-serif;
     background: var(--secondary) ;
+    line-height: normal;
+}
+h1{
+    font-weight: bold ;
 }
 /* HELPERS */
 .flex-row{
@@ -52,7 +56,7 @@ body{
     "section section section"
     "footer footer footer"
     ;
-    grid-template-rows: 108px 450px 450px 36px ;
+    grid-template-rows: 108px 500px 500px 36px ;
     grid-template-columns: 25%;
     height: 100vh;
     margin: 0;
@@ -104,7 +108,6 @@ footer{
 }
 .seccionPrincipal{
     background: url(--secondary);
-    height: auto;
 }
 .seccionPrincipal__tituloHome{
     color: var(--font-color-tittle);
@@ -130,7 +133,7 @@ footer{
 .seccionPrincipal__texto{
     color: var(--font-color-body);
     font-size: 2em;
-    text-align: center; 
+    text-align: justify; 
     margin: 3rem;   
 }
 .seccionMenuDigital{
@@ -161,7 +164,7 @@ footer{
 .menu__contenido{
     color: var(--font-color-tittle);
     margin: 2em;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: lighter;
     list-style: none;
     flex: 1 1 40%;
@@ -229,7 +232,6 @@ footer{
     margin-top: 10rem;
 }
 .fromContactoContainer__img{
-    width: 75rem;
     margin: 0 10rem 10rem 0;
 }
 .formContacto{
@@ -262,9 +264,9 @@ footer{
     align-items: center;
     width: 22rem;
     height: 10rem;
-    border: 0.2rem solid #f6f6f6;
-    border-radius: 2rem;
-    margin: 2rem 1rem 0 0;
+    /* border: 0.2rem solid #f6f6f6;
+    border-radius: 2rem; */
+    margin: 0.8rem 1rem 0 0;
 }
 .formContacto__button{
     display: block;
@@ -278,22 +280,17 @@ footer{
     background: #f6f6f6;
 }
 .imagenesNosotrosContainer{
-    justify-content: center;
-    align-items: justify;
-    
-}
-.imagenNosotrosContainer__1, .imagenNosotrosContainer__2{
-    width: 40rem;
-    height: 40rem;
-    margin: 0 1rem 0 5rem;
+    justify-content: center;    
 }
 .imagenNosotrosContainer__1{
-    width: 50rem;
+    width: 60%;
+    /* margin-left: 255px; */
 }
 .pieDePagina{
     background: var(--principal);
 }
 .pieDePaginaContainer{
+    display: flex;
     justify-content: space-around;
     align-content: center;
     min-height: 100%;
@@ -329,6 +326,24 @@ footer{
 /* MEDIA QUERIES */
 #grilla {display: grid;}
 
+@media screen and (max-width: 1440px){
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        "header header header" 
+        "section section section"
+        "section section section"
+        "footer footer footer"
+        ;
+        grid-template-rows: 108px 500px 500px 36 ;
+        grid-template-columns: 25%;
+        height: 100vh;
+        margin: 0;
+    }
+    .imagenNosotrosContainer__1{
+        margin-left: 200px;
+    }
+}
 @media screen and (max-width: 1024px){
     #grilla{
         display: grid;
@@ -338,10 +353,14 @@ footer{
         "section section section"
         "footer footer footer"
         ;
-        grid-template-rows: 140px 450px 450px 75px ;
+        grid-template-rows: 140px 500px 500px 75px ;
         grid-template-columns: 25%;
         height: 100vh;
         margin: 0;
+     }
+     .header, .section .footer{
+         width: 1024px;
+         max-width: 1024px;
      }
      .header .navegador {
         display: flex;
@@ -354,15 +373,26 @@ footer{
     }
      .menuDeNavegacion a{
         font-size: 20px;
-     }
+    }
      .seccionPrincipal__tituloHome{
         font-size: 36px;
+    }
+    .imagenNosotrosContainer__1{
+        width: 70%;
+        margin-left: 150px;
+    }
+    .formContactoContainer{
+        justify-content: center;
+    }
+    .fromContactoContainer__img{
+        margin-right: -5px;
     }
     .footer .pieDePaginaContainer{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+        background: var(--principal);
     }
     .pieDePagina__texto, .pieDePagina__redes{
         font-size: 20px;
@@ -379,17 +409,11 @@ footer{
         "section section section"
         "footer footer footer"
         ;
-        grid-template-rows: 140px 450px 450px 75px ;
+        grid-template-rows: 140px 500px 500px 75px ;
         grid-template-columns: 25%;
         height: 100vh;
         margin: 0;
      }
-    .header .navegador {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
     .navegador__logo{
         margin: 10px 0;
     }
@@ -403,16 +427,46 @@ footer{
     .seccionPrincipal__tituloHome{
         font-size: 25px;
     }
+    .header, .section, .footer{
+        max-width: 768px;
+    }
+    .formContactoContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+    .formContacto{
+        margin-right: 30px;
+    }
+    .header .navegador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagenesNosotrosContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagenNosotrosContainer__1{
+        width: 90%;
+        margin-left: 40px;
+    }
     .pieDePagina{
         margin-top: 100px;
     }
     .footer .pieDePaginaContainer{
+        margin-top: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100px;
         background: var(--principal);
+    }
+    .footer{
+        background: var(--secondary);
     }
     .pieDePagina__texto, .pieDePagina__redes{
         font-size: 20px;
@@ -429,10 +483,13 @@ footer{
         "section section section"
         "footer footer footer"
         ;
-        grid-template-rows: 140px 450px 450px 75px ;
+        grid-template-rows: 150px 550px 550px 75px ;
         grid-template-columns: 25%;
         height: 100vh;
         margin: 0;
+     }
+     .header, .section, .footer{
+         max-width: 599px;
      }
     .header .navegador {
         display: flex;
@@ -445,6 +502,15 @@ footer{
         flex-basis: auto;
         margin: 10px 0 0 0;
     }
+    .asesoriaContainer{
+        justify-content: center;
+    }
+    .formContactoContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .navegador__logo{
         margin: 10px 0;
     }
@@ -453,6 +519,10 @@ footer{
      }
     .seccionPrincipal__tituloHome{
         font-size: 25px;
+    }
+    .imagenNosotrosContainer__1{
+        width: 90%;
+        margin-left: 30px;
     }
     .footer .pieDePaginaContainer{
         display: flex;
@@ -464,6 +534,9 @@ footer{
         height: 100px;
         background: var(--principal);
         margin-top: 550px;
+    }
+    .footer{
+        background: var(--secondary);
     }
     .pieDePagina__texto, .pieDePagina__redes{
         font-size: 18px;
@@ -479,7 +552,7 @@ footer{
         "section section section"
         "footer footer footer"
         ;
-        grid-template-rows: 170px 450px 450px 75px ;
+        grid-template-rows: 170px 550px 550px 75px ;
         grid-template-columns: 25%;
         height: 100vh;
         margin: 0;
@@ -490,15 +563,34 @@ footer{
         align-items: center;
         justify-content: space-between;
     }
+    .header, .section, .footer{
+        max-width: 480px;
+    }
     .menuDeNavegacion{
         flex-basis: auto;
-        max-width: 460px;
+
     }
     .menuDeNavegacion a{
         font-size: 18px;
      }
     .seccionPrincipal__tituloHome{
         font-size: 25px;
+    }
+    .asesoriaContainer{
+        justify-content: center;
+    }
+    .formContactoContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+    }
+    .formContacto{
+        margin-right: 20px;
+    }
+    .imagenNosotrosContainer__1{
+        width: 90%;
+        margin-left: 22px;
     }
     .pieDePagina{
         height: 100px;
@@ -510,6 +602,9 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .footer{
+        background: var(--secondary);
     }
     .pieDePagina__texto, .pieDePagina__redes{
         font-size: 18px;
@@ -525,7 +620,7 @@ footer{
             "section section section"
             "footer footer footer"
             ;
-            grid-template-rows: 140px 450px 450px 75px ;
+            grid-template-rows: 150px 530px 530px 75px ;
             grid-template-columns: 25%;
             height: 100vh;
             margin: 0;
@@ -536,9 +631,11 @@ footer{
             align-items: center;
             justify-content: space-between;
         }
+        .header, .section, .footer{
+            max-width: 360px;
+        }
         .menuDeNavegacion{
             flex-basis: auto;
-            max-width: 340px;
         }
         .menuDeNavegacion a{
             font-size: 13px ;
@@ -546,19 +643,36 @@ footer{
         .seccionPrincipal__tituloHome{
             font-size: 20px;
         }
-        .pieDePagina{
-            height: 100px;
-            background: var(--principal);
-            margin-top: 550px;
+        .asesoriaContainer{
+            justify-content: center;
         }
+        .formAsesorias__input, .formAsesorias__label, .formAsesorias__select, .formAsesorias__button {
+            margin-right: 40px;
+        }
+        .formContactoContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .formContacto{
+            margin-right: 30px;
+        }
+        .imagenNosotrosContainer__1{
+            width: 90%;
+            margin-left: 15px;
+        }
+        
         .footer .pieDePaginaContainer{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
+        .footer{
+            background: var(--secondary);
+        }
         .pieDePagina__texto, .pieDePagina__redes{
             font-size: 13px;
-            margin-bottom: 10px;
         }  
-}
+    }
