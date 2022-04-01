@@ -1,0 +1,19 @@
+.flex-row{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.container-column{
+    max-width: 144em;
+    margin: 0 auto; 
+}
+.container-row{
+    max-width: 108em;
+    margin: 0 auto;
+}
+.flex-end{
+    display: flex;
+    align-items: flex-end;
+}

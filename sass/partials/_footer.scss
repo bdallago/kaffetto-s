@@ -1,0 +1,32 @@
+footer{
+    grid-area: footer;
+    background: $principal;
+}
+
+.pieDePagina{
+    background: $principal;
+}
+    .pieDePaginaContainer{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        min-height: 100%;
+        padding: 0.5em;
+    }
+        .pieDePagina__contenido{
+            list-style: none;
+            gap: 1em;
+        }
+        .pieDePagina__texto{
+            color: $font-color-tittle;
+            font-size: 2em;
+        }
+        .pieDePagina__redes{
+            text-decoration: none;
+            color: $font-color-tittle;
+            font-size: 2em;
+        }
+        .pieDePagina__enlaceDeInicio{
+            color: $font-color-tittle;
+            font-size: 2em;
+        }

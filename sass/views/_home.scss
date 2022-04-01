@@ -1,0 +1,50 @@
+ #grilla{
+     display: grid;
+     grid-template-areas: 
+     "header header header" 
+     "section section section"
+     "section section section"
+     "footer footer footer"
+     ;
+     grid-template-rows: 108px 500px 500px 36px ;
+     grid-template-columns: 25%;
+     height: 100vh;
+     margin: 0;
+ }
+
+.seccionPrincipal__home{
+    background: url(..//imagenes/cafe-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+.seccionPrincipal{
+    background: $secondary;
+}
+.seccionPrincipal__tituloHome{
+    color: $font-color-tittle;
+    font-size: 5em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-bottom: 2em;
+    transition: transform 1s ease;
+}
+.seccionPrincipal__tituloHome:hover{
+    transform: rotate(360deg) scale(1.5);
+    
+}
+.seccionPrincipal__titulo{
+    color: $font-color-body;
+    letter-spacing: 0.2em;
+    font-size: 3.2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: center;
+    text-decoration: underline;
+}
+.seccionPrincipal__texto{
+    color: $font-color-body;
+    font-size: 2em;
+    text-align: justify; 
+    margin: 3rem;   
+}

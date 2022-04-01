@@ -1,0 +1,32 @@
+header{
+    grid-area: header;
+    background: $principal;
+}
+.navegador{
+
+    min-height: 10.8em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+    .navegador__logo{
+        flex-basis: 30%;
+        animation-name: amazing_rotate;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    .menuDeNavegacion{
+        list-style: none;
+        justify-content: space-between;
+        flex-basis: 70%;
+    }
+    .menuDeNavegacion a{
+        color: $font-color-tittle;
+        font-size: 1.8em;
+        text-decoration: none;
+        padding: 1em;
+    }
+    .menuDeNavegacion a:hover{
+        background: rgba(26, 21, 15, 0.5);
+
+    }
