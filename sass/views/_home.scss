@@ -13,38 +13,37 @@
  }
 
 .seccionPrincipal__home{
+    @include flex (center);
     background: url(..//imagenes/cafe-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
 }
 .seccionPrincipal{
     background: $secondary;
 }
 .seccionPrincipal__tituloHome{
+    @include flex (row, center);
+    font-size: map-get($map: $fuentes, $key: titulo-inicio );
     color: $font-color-tittle;
-    font-size: 5em;
+    text-align: justify;
     letter-spacing: 0.2em;
-    text-align: center;
-    margin-bottom: 2em;
     transition: transform 1s ease;
+    margin-bottom: 10rem;
 }
 .seccionPrincipal__tituloHome:hover{
     transform: rotate(360deg) scale(1.5);
     
 }
 .seccionPrincipal__titulo{
+    @include flex(center);
     color: $font-color-body;
     letter-spacing: 0.2em;
-    font-size: 3.2em;
     margin-bottom: 2em;
     margin-top: 2em;
-    text-align: center;
     text-decoration: underline;
 }
 .seccionPrincipal__texto{
+    @include flex(justify);
     color: $font-color-body;
-    font-size: 2em;
-    text-align: justify; 
     margin: 3rem;   
 }

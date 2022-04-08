@@ -1,9 +1,9 @@
-.flex-row{
+@mixin flex($direction: row, $justify: center, $align: center, $gap: 0,) {
     display: flex;
-}
-.flex-column{
-    display: flex;
-    flex-direction: column;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
 }
 .container-column{
     max-width: 144em;

@@ -3,3 +3,15 @@
     $font-color-tittle: white;
     $font-color-body: black;
     $font-primary: 'Fredoka', sans-serif;
+
+    $fuentes: (
+        titulo-inicio: 5rem,
+        titulo: 3.2rem,
+        cuerpo: 1.8rem
+    );
+
+    @each $var, $val in $fuentes{
+        .ft-#{$var} {
+            font-size: $val;
+        }
+    }

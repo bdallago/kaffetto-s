@@ -7,26 +7,22 @@ footer{
     background: $principal;
 }
     .pieDePaginaContainer{
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
+        @include flex(flex, space-around,);
         min-height: 100%;
         padding: 0.5em;
     }
         .pieDePagina__contenido{
+            @include flex();
             list-style: none;
             gap: 1em;
         }
         .pieDePagina__texto{
             color: $font-color-tittle;
-            font-size: 2em;
         }
         .pieDePagina__redes{
             text-decoration: none;
             color: $font-color-tittle;
-            font-size: 2em;
         }
         .pieDePagina__enlaceDeInicio{
             color: $font-color-tittle;
-            font-size: 2em;
         }

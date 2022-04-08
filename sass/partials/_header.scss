@@ -3,10 +3,8 @@ header{
     background: $principal;
 }
 .navegador{
-
     min-height: 10.8em;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, space-between, center,);
     padding: 0 1rem;
 }
     .navegador__logo{
@@ -16,17 +14,20 @@ header{
         animation-iteration-count: 1;
     }
     .menuDeNavegacion{
+        @include flex(row, space-between);
         list-style: none;
-        justify-content: space-between;
         flex-basis: 70%;
     }
-    .menuDeNavegacion a{
+    .menuDeNavegacion__item a{
         color: $font-color-tittle;
-        font-size: 1.8em;
         text-decoration: none;
         padding: 1em;
     }
-    .menuDeNavegacion a:hover{
+    .menuDeNavegacion__item a:hover{
         background: rgba(26, 21, 15, 0.5);
-
     }
+    .menuDeNavegacion__item--active{
+        @extend.menuDeNavegacion__item;
+        border-bottom: 2px solid white;
+        }
+    
