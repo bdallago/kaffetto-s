@@ -22,17 +22,13 @@
     background: $secondary;
 }
 .seccionPrincipal__tituloHome{
-    @include flex (row, center);
+    @include flex (row, center, justify);
     font-size: map-get($map: $fuentes, $key: titulo-inicio );
     color: $font-color-tittle;
     text-align: justify;
     letter-spacing: 0.2em;
     transition: transform 1s ease;
     margin-bottom: 10rem;
-}
-.seccionPrincipal__tituloHome:hover{
-    transform: rotate(360deg) scale(1.5);
-    
 }
 .seccionPrincipal__titulo{
     @include flex(center);

@@ -1,0 +1,71 @@
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "section section section"
+    "section section section"
+    "footer footer footer"
+    ;
+    grid-template-rows: 108px 500px 500px 36px ;
+    grid-template-columns: 25%;
+    height: 100vh;
+    margin: 0;
+}
+.asesoriaContainer{
+    @include flex(row, flex-end);
+    justify-content: flex-end;
+    margin-top: 10em;
+    background: url(../imagenes/cafeteria-img-asesoria-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 72em;
+}
+.formAsesorias{
+    background:rgb(108, 63, 15);
+    display: inline-block;
+    justify-content: center;
+    width: 30em;
+    height: 60em;
+    padding: 5em 0 0 4em;
+    border-radius: 2em;
+    margin: 5em;
+    max-width: 108em;
+    transition: transform 1s ease-in-out;
+}
+.formAsesorias:hover{
+    transform: scale(1.2);
+}
+.formAsesorias__input, .formAsesorias__select{
+    background: white;
+    border: 0.1rem solid white;
+    border-radius: 0.3rem;
+    height: 2rem;
+    width: 20rem;
+    padding: 2rem;
+    margin: 0.5rem;
+    display: inline-block;
+}
+.formAsesorias__label{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    height: 2rem;
+    width: 20rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.formAsesorias__button{
+    display: block;
+    width: 20rem;
+    height: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: white;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+}

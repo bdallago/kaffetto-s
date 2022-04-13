@@ -1,0 +1,19 @@
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "section section section"
+    "section section section"
+    "footer footer footer"
+    ;
+    grid-template-rows: 108px 500px 504px 36px ;
+    grid-template-columns: 25%;
+    height: 100vh;
+    margin: 0;
+}
+.imagenesNosotrosContainer{
+    justify-content: center;    
+}
+.imagenNosotrosContainer__1{
+    width: 60%;
+}

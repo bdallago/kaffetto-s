@@ -1,0 +1,63 @@
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "section section section"
+    "section section section"
+    "footer footer footer"
+    ;
+    grid-template-rows: 108px 500px 500px 36px ;
+    grid-template-columns: 25%;
+    height: 100vh;
+    margin: 0;
+}
+.formContactoContainer{
+    @include flex(row, flex-end, flex-end);
+    margin-top: 10rem;
+}
+.fromContactoContainer__img{
+    margin: 0 10rem 10rem 0;
+}
+.formContacto{
+    background:rgb(108, 63, 15);
+    @include flex(row, center, center);
+    display: inline-block;
+    width: 30em;
+    height: 50em;
+    padding: 5em 0 0 4em;
+    border-radius: 2em;
+    margin: 3em 0em 5em 3em;
+}
+.formContacto__input{
+    width: 22rem;
+    height: 2rem;
+    padding: 2rem;
+    background: #f6f6f6;
+    border: 0.1rem solid white;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+}
+.formContacto__label{
+    @include flex(column);
+    color: $font-color-tittle;
+    font-size: 2rem;
+    max-width: 22rem;
+    margin-bottom: 1rem;
+}
+.form__textArea{
+    align-items: center;
+    width: 22rem;
+    height: 10rem;
+    margin: 0.8rem 1rem 0 0;
+}
+.formContacto__button{
+    display: block;
+    width: 22rem;
+    height: 2rem;
+    padding: 1.5rem 0;
+    margin: 2rem 15rem 0 0;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #f6f6f6;
+}

@@ -1,0 +1,43 @@
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "section section section"
+    "section section section"
+    "footer footer footer"
+    ;
+    grid-template-rows: 108px 500px 500px 36px ;
+    grid-template-columns: 25%;
+    height: 100vh;
+    margin: 0;
+}
+.seccionMenuDigital{
+     @include flex(column, center,);    
+}
+.menuContainer{
+     @include flex(0, 0, 0);
+     flex-flow: row wrap;
+}
+.menu{
+    background: rgba(108, 63, 15, 0.8);
+    flex: 1 1 45%;
+    padding: 1.5em;
+    margin: 1.5em;
+    border-bottom: 0.4em solid black;
+    border-right: 0.4em solid black;
+    border-radius: 2.5em; 
+}
+.menu__titulo{
+    text-align: center;
+    color: $font-color-tittle;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5em;
+}
+.menu__contenido{
+    color: $font-color-tittle;
+    margin: 2em;
+    font-weight: lighter;
+    list-style: none;
+    flex: 1 1 40%;
+}

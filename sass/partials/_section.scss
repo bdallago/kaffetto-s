@@ -1,5 +1,23 @@
 section{
     grid-area: section;
-    background: var(--secondary);
+    background: $secondary;
 }
-
+.seccionPrincipal{
+    background: $secondary;
+}
+.seccionPrincipal__titulo{
+    color: $font-color-body;
+    letter-spacing: 0.2em;
+    font-size: 3.2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: center;
+    text-decoration: underline;
+}
+.seccionPrincipal__texto{
+    @include flex (row);
+    color: $font-color-body;
+    font-size: 2em;
+    text-align: justify; 
+    margin: 3rem;   
+}

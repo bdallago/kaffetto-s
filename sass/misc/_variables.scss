@@ -7,7 +7,8 @@
     $fuentes: (
         titulo-inicio: 5rem,
         titulo: 3.2rem,
-        cuerpo: 1.8rem
+        titulo-menor:2.2rem,
+        cuerpo: 1.8rem,
     );
 
     @each $var, $val in $fuentes{
