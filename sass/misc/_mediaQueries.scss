@@ -9,13 +9,10 @@
         "section section section"
         "footer footer footer"
         ;
-        grid-template-rows: 108px 500px 500px 36 ;
+        grid-template-rows: 108px 700px 700px 50px ;
         grid-template-columns: 25%;
         height: 100vh;
         margin: 0;
-    }
-    .imagenNosotrosContainer__1{
-        margin-left: 200px;
     }
 }
 @media screen and (max-width: 1024px){
@@ -27,7 +24,7 @@
         "section section section"
         "footer footer footer"
         ;
-        grid-template-rows: 140px 500px 500px 75px ;
+        grid-template-rows: 140px 600px 710px 50px ;
         grid-template-columns: 25%;
         height: 100vh;
         margin: 0;
@@ -53,7 +50,7 @@
     }
     .imagenNosotrosContainer__1{
         width: 70%;
-        margin-left: 150px;
+        margin-right: 0px;
     }
     .formContactoContainer{
         justify-content: center;
@@ -125,7 +122,7 @@
     }
     .imagenNosotrosContainer__1{
         width: 90%;
-        margin-left: 40px;
+        margin-right: 0px;
     }
     .pieDePagina{
         margin-top: 100px;
@@ -157,7 +154,7 @@
         "section section section"
         "footer footer footer"
         ;
-        grid-template-rows: 150px 550px 550px 75px ;
+        grid-template-rows: 150px 550px 600px 75px ;
         grid-template-columns: 25%;
         height: 100vh;
         margin: 0;
@@ -165,16 +162,19 @@
      .header, .section, .footer{
          max-width: 599px;
      }
-    .header .navegador {
+    .header .navegador .encabezado {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     .menuDeNavegacion{
-        max-width: 580;
+        max-width: 599px;
         flex-basis: auto;
         margin: 10px 0 0 0;
+    }
+    .seccionPrincipal__home{
+        margin-top: 250px;
     }
     .asesoriaContainer{
         justify-content: center;
@@ -197,6 +197,18 @@
     .imagenNosotrosContainer__1{
         width: 90%;
         margin-left: 30px;
+    }
+    .imagenesNosotrosContainer{
+        margin-right: 30px;
+    }
+    .imagenesNosotrosContainer__2{
+        @include flex(row, center,);
+    }
+    .imagenNosotrosContainer__2 {
+        width: 90%;
+    }
+    .imagenNosotrosContainer__3 {
+        display: none;
     }
     .footer .pieDePaginaContainer{
         display: flex;
@@ -226,12 +238,12 @@
         "section section section"
         "footer footer footer"
         ;
-        grid-template-rows: 170px 550px 550px 75px ;
+        grid-template-rows: 170px 580px 580px 95px ;
         grid-template-columns: 25%;
         height: 100vh;
         margin: 0;
      }
-    .header .navegador {
+    .header .navegador .encabezado {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -240,13 +252,20 @@
     .header, .section, .footer{
         max-width: 480px;
     }
+    .navegador{
+        margin-top: 25px;
+    }
     .menuDeNavegacion{
+        max-width: 480px;
         flex-basis: auto;
-
     }
     .menuDeNavegacion a{
         font-size: 18px;
+        padding: 0.5em;
      }
+    .seccionPrincipal__home{
+        margin-top: 250px;
+    }
     .seccionPrincipal__tituloHome{
         font-size: 25px;
     }
@@ -262,9 +281,17 @@
     .formContacto{
         margin-right: 20px;
     }
-    .imagenNosotrosContainer__1{
+    .imagenesNosotrosContainer{
+        margin-right: 30px;
+    }
+    .imagenesNosotrosContainer__2{
+        @include flex(row, center,);
+    }
+    .imagenNosotrosContainer__2 {
         width: 90%;
-        margin-left: 22px;
+    }
+    .imagenNosotrosContainer__3 {
+        display: none;
     }
     .pieDePagina{
         height: 100px;
@@ -294,25 +321,29 @@
             "section section section"
             "footer footer footer"
             ;
-            grid-template-rows: 150px 540px 500px 75px ;
+            grid-template-rows: 150px 580px 620px 100px ;
             grid-template-columns: 25%;
             height: 100vh;
             margin: 0;
          }
         .header .navegador .encabezado{
-            display: flex;
-            flex-direction: column;
+            display: row;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
         }
         .header, .section, .footer{
             max-width: 360px;
         }
         .menuDeNavegacion{
             flex-basis: auto;
+            display: row;
         }
         .menuDeNavegacion a{
             font-size: 13px ;
+            padding: 0.5em;
+        }
+        .seccionPrincipal__home{
+            margin-top: 250px;
         }
         .seccionPrincipal__tituloHome{
             font-size: 20px;
@@ -332,11 +363,12 @@
         .formContacto{
             margin-right: 30px;
         }
-        .imagenNosotrosContainer__1{
-            width: 90%;
-            margin-left: 15px;
+        .imagenesNosotrosContainer{
+            margin-right: 30px;
         }
-        
+        .imagenesNosotrosContainer__2{
+            display: none;
+        }
         .footer .pieDePaginaContainer{
             display: flex;
             flex-direction: column;

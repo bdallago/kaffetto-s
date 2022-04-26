@@ -26,6 +26,10 @@
     border-bottom: 0.4em solid black;
     border-right: 0.4em solid black;
     border-radius: 2.5em; 
+    transition: transform 1s ease-in-out;
+}
+.menu:hover{
+    transform: scale(1.1);
 }
 .menu__titulo{
     text-align: center;

@@ -6,7 +6,7 @@
     "section section section"
     "footer footer footer"
     ;
-    grid-template-rows: 108px 500px 500px 36px ;
+    grid-template-rows: 108px 500px 500px 40px ;
     grid-template-columns: 25%;
     height: 100vh;
     margin: 0;
@@ -31,10 +31,6 @@
     border-radius: 2em;
     margin: 5em;
     max-width: 108em;
-    transition: transform 1s ease-in-out;
-}
-.formAsesorias:hover{
-    transform: scale(1.2);
 }
 .formAsesorias__input, .formAsesorias__select{
     background: white;

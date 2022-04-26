@@ -11,9 +11,37 @@
     height: 100vh;
     margin: 0;
 }
+.seccionPrincipal__nosotros{
+    background: $secondary;
+}
+.seccionPrincipal__titulo{
+    color: $font-color-body;
+    letter-spacing: 0.2em;
+    font-size: 3.2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: center;
+    text-decoration: underline;
+}
+.seccionPrincipal__texto{
+    @include flex (row);
+    color: $font-color-body;
+    font-size: 2em;
+    text-align: justify; 
+    margin: 3rem;   
+}
 .imagenesNosotrosContainer{
-    justify-content: center;    
+    @include flex(row, center,);
+}
+.imagenesNosotrosContainer__2{
+    @include flex(row, space-around,);
 }
 .imagenNosotrosContainer__1{
     width: 60%;
+}
+.imagenNosotrosContainer__2{
+    width: 40%;
+}
+.imagenNosotrosContainer__3{
+    width: 45%;
 }
